@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"/>
+    <title>Register</title>
+</head>
+<body>
+    <header>
+        <p>More bootstrap 4 components on <span><a href="#">Bootstrap-ecommerce.com</a></span></p>
+    </header>
+    <hr>
+    <section>
+        <article>
+            <h2>Create Account</h2>
+            <p>Get started with your free account</p>
+            <button>
+                <a href="https://twitter.com/">
+                    <i class="fa-brands fa-twitter"></i>
+                    Login via Twitter
+                </a>
+            </button>
+
+            <br/>
+
+            <button>
+                <a href="https://tr-tr.facebook.com/">
+                    <i class="fa-brands fa-facebook"></i>
+                    Login via facebook
+                </a>
+            </button>
+            <hr>
+            <span>or</span>
+        </article>
+
+        <form action="#">
+            <label for="fullname">
+                <i class="fa-solid fa-user"></i>
+            </label>
+            <input type="text" id="fullname" required placeholder="Full name" autofocus>
+
+            <br/>
+
+            <label for="email">
+                <i class="fa-solid fa-envelope"></i>
+            </label>
+            <input type="email" id="email" required placeholder="Email address">
+
+            <br/>
+
+            <label for="phone">
+                <i class="fa-solid fa-phone-flip"></i>
+            </label>
+            <select name="tel" id="tel">
+                <option value="+971">+971</option>
+                <option value="+376">+376</option>
+                <option value="+420">+420</option>
+            </select>
+            <input type="tel" id="tel" required placeholder="Phone number">
+
+            <br/>
+
+            <label for="job">
+                <i class="fa-solid fa-building"></i>
+            </label>
+            <select name="job" id="job">
+                <option selected disabled>
+                    Select job type
+                </option>
+                <option value="education">
+                    Education
+                </option>
+                <option value="software">
+                    Software
+                </option>
+                <option value="law">
+                    Law
+                </option>
+            </select>
+
+            <br/>
+
+            <label for="password">
+                <i class="fa-solid fa-lock"></i>
+            </label>
+            <input type="password" id="password" name="password">
+        </form>
+    </section>
+</body>
+</html>
