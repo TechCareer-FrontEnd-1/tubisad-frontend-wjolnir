@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    display: flex;
+    background-color: #ff33ae;
+    width: 100%;
+    height: 25vh;
+    position: relative;
+    justify-content: center;
+}
+
+.new_todo{
+    width: 40%;
+    background-color: white;
+    position: absolute;
+    top: 18vh;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,.8);
+    padding: 1% 1% 1% 1%;
+}
+
+.new_todo label{
+    display: block;
+    font-size: 1.5rem;
+}
+
+#item{
+    width: 80%;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    border: 1px solid rgb(211, 201, 201);
+}
+
+.new_todo button{
+    width: 15%;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    padding: 5px 10px 5px 10px;
+    float: right;
+}
+
+.new_todo button:hover{
+    cursor: pointer;
+}
+
+section{
+    width: 40%;
+    position: absolute;
+    top: 50vh;
+    border: 1px solid rgb(211, 201, 201);
+    border-radius: 5px;
+}
+
+#list-header{
+    border-bottom: 1px solid rgb(211, 201, 201);
+    padding: 2%;
+    font-size: 1.5rem;
+}
+
+#list-header label{
+    color: rgb(168, 163, 163);
+}
+
+#list-header input{
+    width: 70%;
+    font-size: 1.5rem;
+    padding: 1%;
+}
+
+#list-header button{
+    width: 15%;
+    color:#ff33ae;
+    border: 1px solid #ff33ae;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 1.3rem;
+    padding: 5px 10px 5px 10px;
+    float: right;
+}
+
+#list-header button:hover{
+    background-color: #ff33ae;
+    color: white;
+    transition: 2s all;
+    cursor: pointer;
+}
+
+ul{
+    display: block;
+    width: 100%;
+}
+
+ul li{
+    list-style-type: none;
+    border-bottom: 1px solid rgb(211, 201, 201);
+    padding: 2% 1% 2% 1%;
+}
+
+ul li input{
+    margin: 2%;
+}
+
+ul li span{
+    color: rgb(133, 130, 130);
+    font-size: 1.5rem;
+}
+
+ul li i{
+    float: right;
+    color: #ff33ae;
+}
+
+ul li i{
+    cursor: pointer;
+}
+
+.margin-right{
+    margin-right: 4%;
+}

@@ -7,41 +7,48 @@
     <link
     rel="stylesheet"
     href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"/>
+    <link rel="stylesheet" href="index.css">
     <title>ToDo List</title>
 </head>
 <body>
     <header>
-        <label for="item">New Todo:</label> <br/>
-        <input type="text" id="item">
-        <button>Add</button>
+        <div class="new_todo">
+            <label for="item">New Todo:</label>
+            <input type="text" id="item">
+            <button style="background-color: #ff33ae;">Add</button>
+        </div>
     </header>
 
     <section>
-        <label for="item">Edit:</label>
-        <input type="text" id="item" value="Mow the lawn">
-        <button>Save</button>
-        <article>
-            <ul>
-                <li>
-                    <input type="checkbox" id="item"/>
-                    <span>Vacuum the carpet</span>
-                    <i class="fa-solid fa-pencil"></i>
-                    <i class="fa-solid fa-trash-can"></i>
-                </li>
-                <li>
-                    <input type="checkbox" id="item"/>
-                    <span>Sweep</span>
-                    <i class="fa-solid fa-pencil"></i>
-                    <i class="fa-solid fa-trash-can"></i>
-                </li>
-                <li>
-                    <input type="checkbox" id="item"/>
-                    <span>Wash the dishes</span>
-                    <i class="fa-solid fa-pencil"></i>
-                    <i class="fa-solid fa-trash-can"></i>
-                </li>
-            </ul>
-        </article>
+        <div id="todo-list">
+            <div id="list-header">
+                <label for="item">Edit:</label>
+                <input type="text" id="item" value="Mow the lawn">
+                <button>Save</button>
+            </div>
+            <article>
+                <ul>
+                    <li>
+                        <input type="checkbox"/>
+                        <span>Vacuum the carpet</span>
+                        <i class="fa-solid fa-trash-can" style="margin-right: 2%;"></i>
+                        <i class="fa-solid fa-pencil margin-right"></i>
+                    </li>
+                    <li>
+                        <input type="checkbox"/>
+                        <span>Sweep</span>
+                        <i class="fa-solid fa-trash-can" style="margin-right: 2%;"></i>
+                        <i class="fa-solid fa-pencil margin-right"></i>
+                    </li>
+                    <li>
+                        <input type="checkbox"/>
+                        <span>Wash the dishes</span>
+                        <i class="fa-solid fa-trash-can" style="margin-right: 2%;"></i>
+                        <i class="fa-solid fa-pencil margin-right"></i>
+                    </li>
+                </ul>
+            </article>
+        </div>
     </section>
 </body>
 </html>
