@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Bootstrap</title>
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- react libraries -->
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+</head>
+<body>
+    <div class="container">
+        <p class="text-center my-3">
+            More bootstrap 4 components on <a href="#" class="text-decoration-none">Bootstrap-ecommerce.com</a>
+        </p>
+
+        <hr/>
+
+        <section class="container">
+            <h1 class="text-center">
+                Create Account
+            </h1>
+
+            <p class="text-center">
+                Get started with your free account
+            </p>
+
+            <div class="w-100 d-flex justify-content-center my-2">
+                <a href="#" class="btn btn-info btn-block text-white w-50">
+                    <i class="fa-brands fa-twitter"></i>
+                    Login via Twitter
+                </a>
+            </div>
+            <div class="w-100 d-flex justify-content-center">
+                <a href="#" class="btn btn-primary btn-block text-white w-50">
+                    <i class="fa-brands fa-facebook"></i>
+                    Login via Facebook
+                </a>
+            </div>
+
+            <div class="container d-flex justify-content-center my-3">
+                <hr class="col-md-3">
+                <span class="col-md-1 d-flex justify-content-center">or</span>
+                <hr class="col-md-3">
+            </div>
+
+            <div class="col-md-6 m-auto">
+                <form action="" method="get" class="my-3 w-100 justify-content-center">
+                    <div class="col-md-12 my-2">
+                        <div class="row">
+                            <div class="col-md-1 bg-light border rounded d-flex align-items-center justify-content-center">
+                                <label for="fullname">
+                                    <i class="fa-solid fa-user"></i>
+                                </label>
+                            </div>
+                            <div class="col-md-11 p-0">
+                                <input type="text" class="form-control" id="id_name" placeholder="Full name">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-12 my-2">
+                        <div class="row">
+                            <div class="col-md-1 bg-light border rounded d-flex align-items-center justify-content-center">
+                                <label for="email">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </label>
+                            </div>
+                            <div class="col-md-11 p-0">
+                                <input type="email" class="form-control" id="id_email" placeholder="Email address">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-12 my-2">
+                        <div class="row">
+                            <div class="col-md-1 bg-light border rounded d-flex align-items-center justify-content-center">
+                                <label for="phone">
+                                    <i class="fa-solid fa-phone-flip"></i>
+                                </label>
+                            </div>
+                            <div class="col-md-5 p-0">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>+971</option>
+                                    <option value="1">+90</option>
+                                    <option value="2">+123</option>
+                                    <option value="3">+523</option>
+                                  </select>
+                            </div>
+                            <div class="col-md-6 p-0">
+                                <input type="tel" class="form-control" id="id_tel" placeholder="Phone number">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-12 my-2">
+                        <div class="row">
+                            <div class="col-md-1 bg-light border rounded d-flex align-items-center justify-content-center">
+                                <label for="job">
+                                    <i class="fa-solid fa-building"></i>
+                                </label>
+                            </div>
+                            <div class="col-md-11 p-0">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected disabled>Select job type</option>
+                                    <option value="1">Education</option>
+                                    <option value="2">Software</option>
+                                    <option value="3">Law</option>
+                                  </select>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-12 my-2">
+                        <div class="row">
+                            <div class="col-md-1 bg-light border rounded d-flex align-items-center justify-content-center">
+                                <label for="password">
+                                    <i class="fa-solid fa-lock"></i>
+                                </label>
+                            </div>
+                            <div class="col-md-11 p-0">
+                                <input type="password" class="form-control" id="id_password" placeholder="Create password">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-12 d-flex justify-content-center">
+                <button type="reset" class="btn btn-danger col-md-2 mx-5">
+                    Reset
+                </button>
+
+                <button type="submit" class="btn btn-success col-md-2 mx-5">
+                    Submit
+                </button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
