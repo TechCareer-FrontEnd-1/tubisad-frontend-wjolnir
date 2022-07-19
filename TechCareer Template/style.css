@@ -1,11 +1,3 @@
-/*
-project name: one pages 
-project date: 30-Mayis 2022
-project author: Hamit Mızrak
-project version: v.1
-*/
-/* ############################################################################ */
-/* common property */
 *{
     margin: 0;
     padding:0px;
@@ -13,10 +5,23 @@ project version: v.1
 }
 
 body{
-    /* font-family: 'Quicksand', sans-serif; */
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     position: relative;
-    background:#edeff1;
+    background-image: url("./picture/background.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+::-webkit-scrollbar{
+    background: #80d7f9;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #5cb6db;
+    border-radius: 10px;
 }
 
 html{
@@ -39,42 +44,6 @@ p{
 
 
 /* ############################################################################ */
-/* line-clamp */
-.line_clamp3{
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-.line_clamp4{
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-.line_clamp5{
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-.line_clamp6{
-    display: -webkit-box;
-    -webkit-line-clamp: 6;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-.line_clamp7{
-    display: -webkit-box;
-    -webkit-line-clamp: 7;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-/* ############################################################################ */
-
 
 /*  nav */
 #navbar{
@@ -82,10 +51,8 @@ p{
 }
 
 #logo_div:hover{
-    box-shadow: 1px 1px 4px 1px rgba(0,0,0,.6);
-    width: 10rem;
+    box-shadow: 1px 1px 4px 1px #5cb6db;
 }
-
 
 #navbar_id ul>li>a{
     font-size:.8rem;
@@ -94,7 +61,7 @@ p{
 #navbar_id ul>li>a>i{
     margin-right: .5rem;
     font-size:.8rem;
-    color:chartreuse;
+    color:white;
 }
 
 #right_navbar>button,a{
@@ -102,33 +69,44 @@ p{
 }
 
 /* ############################################################################ */
+
 /* header */
 header{
-    background-image: url("picture/header.jpg");
-    background-size: cover;
-    background-position: 50% 50%;
     z-index:-1;
     height:50rem;
     padding-top:15rem;
 }
 
 /* ##############################################################################*/
+
 /* main */
 
-/* section-1 */
+/* section-1 : hakkımda */
+#hakkimda{
+    padding:9rem;
+}
+#hakkimda_id p{
+    display: -webkit-box;
+    -webkit-line-clamp: 12;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-indent: 3rem;
+}
+
+/* section-2 : yetenekler */
 #ability {
    padding: 6rem; 
-   background:#3D3D3D;
 }
 
 #ability i{
-    color:red;
-    font-size: 8rem;
+    color:#212529;
+    font-size: 3rem;
 }
 
-/* #ability,#section_3,#section_2,#section_6{
-    margin-bottom:6rem;
-} */
+.ability_circle{
+    padding: 1rem;
+}
 
 #ability .card{
     box-shadow: 1px 1px 8px 1px rgba(0,0,0,.8);
@@ -139,79 +117,63 @@ header{
    opacity:.7;
 }
 
-/* section-2: blog */
-#section_2{
-    background: url('picture/coffee-g4d61840d9_1920.jpg');
-    background-size: cover;
-    background-position: 50% 50%;
+/* section-3: çalışmalar */
+#calismalar{
     opacity:.9;
     padding:6rem;
 }
 
-#section_2 .card{
+#calismalar .card{
 margin-bottom:2rem;
 }
 
-#section_2 .card .card-text{
+#calismalar .card .card-text{
     display: -webkit-box;
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
-#section_2 .card>img:hover{
+#calismalar .card>img:hover{
     opacity:.8;
     cursor:pointer;
 }
 
-
-/* section-3 */
-#section_3{
-    background: rgba(255,255,255,.8);
-    padding:9rem;
-}
-#newspaper_id{
-    display: -webkit-box;
-    -webkit-line-clamp: 12;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-indent: 3rem;
-    /* column-count: 3;
-    column-rule:solid rgba(0,0,0,.6); */
+#incele:hover{
+    cursor: pointer;
 }
 
-/* back_to_top */
-#back_top{
-    position:fixed;
-    right:0;
-    bottom:0;
-    width:5.4rem;
-    padding-top:.5rem;
-    margin-right: .4rem;
-    margin-bottom: .4rem;
-    border-radius: .4rem;
-    opacity:.7;
-    display: none;
+.fas{
+    cursor: pointer;
 }
 
-#back_top:hover{
-    width:7rem;
-    opacity:.9;
+/* section-4 : deneyimler */
+#deneyimler img{
+    width: 300px;
 }
 
-#section_6{
+.clear:before{
+    content:"";
+    clear:both;
+    display:block;
+}
+
+/* section-5 : iletisim */
+#iletisim{
     padding:8rem;
-    background:#313131;
+
 }
 
-/* ################################################################# */
+.form-control::-webkit-input-placeholder {
+    color:#fff;
+}
 
 #contact_form>.row>div{
     margin-bottom: .6rem;
 }
 
 #contact_form{
-    background: rgba(0,0,0,0.8);
+    background: transparent;
     padding:1rem;
     
 }
@@ -222,20 +184,144 @@ margin-bottom:2rem;
 footer{
     min-height: 20rem;
     width: auto;
-    background-color: #3d3d3d;
     color:white;
 }
 
-#address_id i{
-    margin-right:.6rem;
-    color:blueviolet;
+/* footer : sosyal */
+#social_media{
+    position: fixed;
+    right:0;
+    top:40%;
 }
 
-#address_id a{
-    color:chartreuse;
-    font-size:.8rem;
+/* back_to_top */
+#back_top{
+    position:fixed;
+    right:0;
+    bottom:0;
+    width:3rem;
+    padding-top:.5rem;
+    margin-right: .4rem;
+    margin-bottom: .4rem;
+    border-radius: .4rem;
+    opacity:.7;
+    display: none;
+}
+
+#back_top:hover{
+    opacity:.9;
 }
 
 #copy_right{
-    background: #2f3337;
+    background: #5cb6db!important;
+}
+
+@media screen and (max-width: 1400px){
+    #navbar_id ul>li>a{
+        font-size:.5rem;
+    }
+
+    .ability_circle{
+        padding: .6rem;
+    }
+
+    .progress{
+        height:.8rem;
+    }
+
+    #ability i{
+        font-size: 2.5rem;
+    }
+
+    .arrow{
+        font-size: 2.7rem;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    #navbar_id ul>li>a{
+        font-size:.7rem;
+    }
+
+    .ability_circle{
+        padding: .5rem;
+    }
+
+    .progress{
+        height: .8rem;
+    }
+
+    #ability i{
+        font-size: 2rem;
+    }
+
+    .arrow{
+        font-size: 2.5rem;
+    }
+
+    #iletisim{
+        padding:2rem;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #navbar_id ul>li>a{
+        font-size:.8rem;
+    }
+    
+    #navbar_id ul{
+        border-bottom: 1px solid white;
+    }
+    
+    .ability_circle{
+        padding: 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    #hakkimda{
+        padding:3rem;
+    }
+
+    #iletisim{
+        padding: 3rem;
+    }
+
+    #deneyimler img{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #ability{
+        padding:2rem;
+    }
+
+    .ability_circle{
+        padding: .4rem;
+        font-size: .9rem;
+    }
+
+    .progress{
+        height: .7rem;
+    }
+
+    #ability i{
+        font-size: 1.5rem;
+    }
+    
+    #calismalar{
+        padding:1rem;
+    }
+
+    .arrow{
+        font-size: 2rem;
+    }
+
+    #hakkimda{
+        padding: 1rem;
+    }
+
+    #iletisim{
+        padding:1rem;
+    }
 }

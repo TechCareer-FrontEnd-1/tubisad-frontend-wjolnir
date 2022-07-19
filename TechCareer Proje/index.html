@@ -14,7 +14,7 @@
 <!-- seo -->
 <meta name="keywords" content="html5,css3,js,jquery,bootstrap,react,es5,es6" />
 <meta name="description" content="one pages, html5,css3,js,jquery,bootstrap,seo" />
-<meta name="author" content="Halil Yollu" />
+<meta name="author" content="Hamit Mızrak" />
 
 <!-- Google Fonts-->
 <!-- <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Quicksand:wght@300&display=swap"
@@ -48,26 +48,12 @@
 
 <!-- External JS -->
 <script src="template.js"></script>
-<script src="scrolloverflow.js"></script>
-
-<!--Sweet Alert-->
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script>
-    function SweetAlert(){
-  swal({
-  title: "Kaydınız ALındı",
-  text: "Giriş Yapabilirsiniz",
-  icon: "success",
-  button: "Tamam",
- });
-  }
-</script>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-example">
 
     <!-- Navbar start -->
-    <nav class="navbar fixed-top  navbar-expand-lg navbar-dark bg-dark" id="navbar" style="background-color: #0000005c!important;">
+    <nav class="navbar fixed-top  navbar-expand-lg navbar-dark bg-dark" id="navbar" style="background-color: transparent!important;">
         <!-- Container wrapper -->
         <div class="container" id="navbar-example">
             <!-- Navbar brand -->
@@ -87,10 +73,10 @@
             <!-- Collapsible wrapper -->
             <div class="collapse navbar-collapse float-end" id="navbar_id">
                 <!-- Left links -->
-                <ul class="navbar-nav me-auto ms-1 mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#hakkimda"> <i class="fa-solid fa-user-tie"></i>Hakkımda</a>
+                        <a class="nav-link" href="#section_3"> <i class="fa-solid fa-user-tie"></i>Hakkımda</a>
                         </li>
 
                     <li class="nav-item">
@@ -98,30 +84,26 @@
                     </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link" href="#calismalar"><i class="fa-solid fa-briefcase"></i></i>Çalışmalar</a>
+                            <a class="nav-link" href="#section_2"><i class="fa-solid fa-briefcase"></i></i>Çalışmalar</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#deneyimler"><i class="fas fa-building"></i>Deneyimler</a>
+                        <a class="nav-link" href="#section_7"><i class="fas fa-building"></i>Deneyimler</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#iletisim"> <i class="fa-solid fa-address-card"></i>İletişim</a>
+                        <a class="nav-link" href="#section_6"> <i class="fa-solid fa-address-card"></i>İletişim</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#istatistik"><i class="fa-solid fa-chart-pie"></i>İstatistik</a>
+                        <a class="nav-link" href="#section_footer_2"><i class="fa-solid fa-chart-pie"></i>İstatistik</a>
                     </li>
                 </ul>
                 <!-- Left links -->
 
-                <div class="ui-widget d-lg-none d-xl-block">
+                <div class="ui-widget">
                     <label for="tags"></label>
                     <input id="tags">
-                    <a href="" onclick="search()">
-                        <i class="fa-solid fa-magnifying-glass text-white"></i>
-                    </a>
-
                 </div>
 
                 <div class="d-flex align-items-center" id="right_navbar">
@@ -142,6 +124,7 @@
     </nav>
     <!-- Navbar ends -->
 
+    <!-- Button trigger modal -->
 
 
     <!-- Modal : Login -->
@@ -163,9 +146,7 @@
                                             <i class="fa-solid fa-envelope"></i>
                                         </label>
                                     </div>
-                                    <div class="col"> 
-                                        <input type="email" id="form2Example1" class="form-control" name="form2xample1" placeholder="Emailiz..." />
-                                        <span id="validation_email" class="text-danger" style="font-size:.8rem ;"></span>
+                                    <div class="col ui-widget"> <input type="email" id="form2Example1" class="form-control" />
                                     </div>
                                 </div>
                             </div>
@@ -175,20 +156,10 @@
                         <div class="form-outline mb-4">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-1"> 
-                                        <label class="form-label" for="form2Example2">
+                                    <div class="col-1"> <label class="form-label" for="form2Example2">
                                             <i class="fa-solid fa-key"></i>
-                                        </label>
-                                    </div>
-                                    <div class="col"> 
-                                        <input type="password" id="loginPassword" class="form-control" placeholder="Şifreniz..." />
-                                        <span id="validation_password" class="text-danger" style="font-size:.8rem ;"></span>
-                                        <div>
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="showLoginPassword('loginPassword')">
-                                            <label class="form-check-label text-muted">
-                                              Parolayı Göster
-                                            </label>
-                                        </div>
+                                        </label></div>
+                                    <div class="col"> <input type="password" id="form2Example2" class="form-control" />
                                     </div>
                                 </div>
                             </div>
@@ -196,8 +167,8 @@
 
                         <div class="mt-2 mb-2">
                             <button type="reset" class="btn btn-danger btn-block ">Temizle</button>
-                            <a href="#" id="submitHref">
-                                <button type="button" id="btnSubmit" class="btn btn-primary btn-block ">Giriş Yap</button>
+                            <a href="./index.html">
+                                <button type="submit" class="btn btn-primary btn-block ">Giriş Yap</button>
                             </a>
                         </div>
 
@@ -222,50 +193,31 @@
                             </div>
 
                         </div>
+
+
+                        <!-- Register buttons -->
+                        <div class="text-center">
+
+                            <button type="button" class="btn btn-primary btn-floating mx-1 rounded-circle">
+                                <i class="fab fa-facebook-f"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-danger btn-floating mx-1 rounded-circle">
+                                <i class="fab fa-google"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-info text-white btn-floating mx-1 rounded-circle">
+                                <i class="fab fa-twitter"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-dark btn-floating mx-1 rounded-circle">
+                                <i class="fab fa-github"></i>
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
-        <script>
-            /* login value and validation*/
-            $(function () {
-            $("#btnSubmit").click(function () {
-                let email, password;
-                email = jQuery.trim($("#form2Example1").val());
-                password = jQuery.trim($("#loginPassword").val());
-
-
-                //validation  email
-                if (email == "") {
-                $("#validation_email").html("Email girilmesi zorunludur...");
-                } else if (regexEmail(email) == false) {
-                $("#validation_email").html("Uygun formatta email girilmedi örn: deneme@gmail.com")
-                }
-
-                //regex email
-                function regexEmail(email) {
-                let regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-                return regex.test(email);
-                }
-
-                //validation  password
-                if (password == "") {
-                $("#validation_password").html("şifre girmek zorunludur...");
-                } else if (regexPassword(password) == false) {
-                $("#validation_password").html("Uygun formatta  şifre girilmedi örn: en az 8 karakter")
-                }else{
-                    button.querySelector('#btnSubmit').setAttribute('type', 'submit');
-                    button.querySelector('#submitHref').setAttribute('href', './index.html');
-                }
-
-                //regex password
-                function regexPassword(password) {
-                let regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
-                return regex.test(password);
-                }
-            })//onclick close
-            }); //document ready close
-        </script>
     </div>
     <!-- modal-login ends -->
 
@@ -285,129 +237,47 @@
                         <div class="container mb-4">
                             <div class="row">
                                 <div class="col-6">
-                                    <input type="text" class="form-control" id="registerName" name="register" placeholder="Adınız..." />
-                                    <span id="validation_register_name" class="text-danger" style="font-size:.8rem ;"></span>
+                                    <input type="text" class="form-control" id="" placeholder="Adınız"/>
                                 </div>
                                 <div class="col-6">
-                                    <input type="text" class="form-control" id="registerSurname" placeholder="Soyadınız..." />
-                                    <span id="validation_register_surname" class="text-danger" style="font-size:.8rem ;"></span>
+                                    <input type="text" class="form-control" id="" placeholder="Soyadınız"/>
                                 </div>
                             </div>
                         </div>
                         <!--Email Register-->
                         <div class="container mb-4">
                             <div class="row">
-                                <div class="col-12">
-                                    <input type="email" id="registerEmail" class="form-control" placeholder="abcde@example.com"/>
-                                    <span id="validation_register_email" class="text-danger" style="font-size:.8rem ;"></span>
+                                <div class="input-group">
+                                    <input type="email" id="" class="form-control" placeholder="abcde@example.com"/>
                                 </div>
                             </div>
                         </div>
                         <!--Password Register-->
                         <div class="container mb-4">
                             <div class="row">
-                                <div class="col-12">
-                                    <input type="password" id="registerPassword" class="form-control" placeholder="Parolanız"/>
-                                    <span id="validation_register_password" class="text-danger" style="font-size:.8rem ;"></span>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="showRegisterPassword('registerPassword','registerRepassword')">
-                                    <label class="form-check-label text-muted">
-                                      Parolayı Göster
-                                    </label>
+                                <div class="input-group">
+                                    <input type="password" id="" class="form-control" placeholder="Parolanız"/>
                                 </div>
                             </div>
                         </div>
                         <!--Repassword Register-->
                         <div class="container mb-4">
                             <div class="row">
-                                <div class="col-12">
-                                    <input type="password" id="registerRepassword" class="form-control" placeholder="Parolanızı Tekrar Girin"/>
-                                    <span id="validation_register_repassword" class="text-danger" style="font-size:.8rem ;"></span>
+                                <div class="input-group">
+                                    <input type="password" id="" class="form-control" placeholder="Parolanızı Tekrar Girin"/>
                                 </div>
-                            </div>
-                        </div>
-                        <!--Zaten Hesabın Var Mı?-->
-                        <div class="container">
-                            <div class="row">
-                                <a href="modalId" id="haveAnAccount" class="text-primary" data-bs-toggle="modal" data-bs-target="#modelId">
-                                    <u>Zaten bir hesabın mı var?</u>
-                                </a>
                             </div>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
-                    <a href="#">
-                        <button type="button" class="btn btn-primary" id="btnRegister" onclick="">Kayıt Ol</button>
+                    <a href="./index.html">
+                        <button type="button" class="btn btn-primary">Kayıt Ol</button>
                     </a>
                 </div>
             </div>
         </div>
-        <script>
-            /* register value and validation*/
-            $(function () {
-            $("#btnRegister").click(function () {
-                let email, password, name, surname, repassword;
-                name = jQuery.trim($("#registerName").val());
-                surname = jQuery.trim($("#registerSurname").val());
-                email = jQuery.trim($("#registerEmail").val());
-                password = jQuery.trim($("#registerPassword").val());
-                repassword = jQuery.trim($("#registerRepassword").val());
-
-                //validition fullName
-                if (name == "" && surname == "") {
-                    $("#validation_register_name").html("Zorunlu alan");
-                    $("#validation_register_surname").html("Zorunlu alan...")
-                }
-
-                //validation  email
-                if (email == "") {
-                $("#validation_register_email").html("Zorunlu alan")
-                } else if (regexEmail(email) == false) {
-                $("#validation_register_email").html("Uygun formatta email girilmedi örn: deneme@gmail.com")
-                }
-
-                //regex email
-                function regexEmail(email) {
-                let regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-                return regex.test(email);
-                }
-
-                //validation  password
-                if (password == "") {
-                $("#validation_register_password").html("Zorunlu alan")
-                } else if (regexPassword(password) == false) {
-                $("#validation_register_password").html("Uygun formatta şifre girilmedi örn: en az 8 karakter")
-                }else{
-                    button.querySelector('#btnRegister').setAttribute('onclick','SweetAlert()');
-                }
-
-                //regex password
-                function regexPassword(password) {
-                let regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
-                return regex.test(password);
-                }
-
-                //validation  repassword
-                if (repassword == "") {
-                $("#validation_register_repassword").html("Zorunlu alan")
-                } else if (regexPassword(repassword) == false) {
-                $("#validation_register_repassword").html("Uygun formatta şifre girilmedi örn: en az 8 karakter")
-                }else{
-                    button.querySelector('#btnRegister').setAttribute('onclick','SweetAlert()');
-                }
-
-                //regex repassword
-                function regexPassword(repassword) {
-                let regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
-                return regex.test(repassword);
-                }
-    
-            })//onclick close
-            }); //document ready close
-        </script>
     </div>
     <!-- navbar end -->
 
@@ -428,12 +298,12 @@
     <!-- main-start -->
     <main>
 
-        <!-- section-1 start : hakkimda-->
-        <section id="hakkimda" class="text-white">
+        <!-- section-3 start : NewsPaper -->
+        <section id="section_3" class="text-white">
             <div class="container">
                 <div class="row">
                     <h2 class="text-uppercase display-6 text-center bold wow fadeInDown animated" data-wow-delay=".50s">Halil YOLLU Kimdir?</h2>
-                    <p id="hakkimda_id">
+                    <p id="newspaper_id">
                         <p style="text-indent: 50px;" class="wow fadeInLeft" data-wow-delay=".50s">
                             Pamukkale Üniversitesi Bilgisayar Mühendisliği bölümünü 2018' de kazandım. Üniversite hayatım boyunca siber güvenlik, oyun programlama, mobil programlama vb. gibi alanlarda da çalışmalarım oldu. Ancak kendimi web alanına daha yatkın hissettim ve kendimi bu alanda geliştirmeye çalıştım. 2021 Haziran ayında Pamukkale Üniversitesi teknokentinde bulunan Technoone Yazılım Sistemleri Ltd. Şti.' de ilk stajıma başladım ve bu stajda web alanında kendimi geliştirme fırsatı buldum. Genel olarak staj süresi boyunca Photoshop, Html, Css, Bootstrap ve Javascript kullandım. Ağustos 2021' de stajımı tamamladım.
                         </p> <br>
@@ -449,16 +319,16 @@
                 </div>
             </div>
         </section>
-          <!-- section-1 end -->
+          <!-- section-3 end -->
 
-        <!-- section-2 start : ability -->
+        <!-- section-1 start : ability -->
         <section id="ability">
-            <div class="container ability_bar" style="margin-top:3rem; margin-bottom:3rem;">
+            <div class="container" style="margin-top:3rem; margin-bottom:3rem;">
                 <p class="text-uppercase display-6 text-center text-light wow zoomIn animated" data-wow-delay=".50s">Yetenekler</p>
-                <div class="row text-center">
-                    <div class="col-md-12 col-lg-4 d-flex align-items-center justify-content-center my-lg-5 my-3 wow zoomInUp animated" data-wow-delay=".50s">           
-                        <span class="text-white col-xs-4 col-sm-3 col-md-2 text-center ability_circle" style="background-color: #212529; border-radius: 50%;"><bold>80</bold></span>          
-                        <div class="progress col-6">
+                <div class="row">
+                    <div class="col-md-12 col-lg-4 d-flex align-items-center my-lg-5 my-sm-3 wow zoomInUp animated" data-wow-delay=".50s">           
+                        <span class="text-white col-2 text-center" style="padding: 1rem; background-color: #212529; border-radius: 50%;"><bold>80</bold></span>          
+                        <div class="progress col-8">
                             <div class="progress-bar bg-dark" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <div class="col-2 text-center">
@@ -466,9 +336,9 @@
                         </div>
                     </div>
 
-                    <div class="col-md-12 col-lg-4 d-flex align-items-center justify-content-center my-lg-5 my-3 wow zoomInDown animated" data-wow-delay="1.0s">           
-                        <span class="text-white col-xs-4 col-sm-3 col-md-2 text-center ability_circle" style="background-color: #212529; border-radius: 50%;"><bold>80</bold></span>          
-                        <div class="progress col-6">
+                    <div class="col-md-12 col-lg-4 d-flex align-items-center my-lg-5 my-sm-3 wow zoomInDown animated" data-wow-delay="1.0s">           
+                        <span class="text-white col-2 text-center" style="padding: 1rem; background-color: #212529; border-radius: 50%;"><bold>80</bold></span>          
+                        <div class="progress col-8">
                             <div class="progress-bar bg-dark" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <div class="col-2 text-center">
@@ -476,9 +346,9 @@
                         </div>
                     </div>
 
-                    <div class="col-md-12 col-lg-4 d-flex align-items-center justify-content-center my-lg-5 my-3 wow zoomInUp" data-wow-delay="1.50s">           
-                        <span class="text-white col-xs-4 col-sm-3 col-md-2 text-center ability_circle" style="background-color: #212529; border-radius: 50%;"><bold>80</bold></span>          
-                        <div class="progress col-6">
+                    <div class="col-md-12 col-lg-4 d-flex align-items-center my-lg-5 my-sm-3 wow zoomInUp" data-wow-delay="1.50s">           
+                        <span class="text-white col-2 text-center" style="padding: 1rem; background-color: #212529; border-radius: 50%;"><bold>80</bold></span>          
+                        <div class="progress col-8">
                             <div class="progress-bar bg-dark" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <div class="col-2 text-center">
@@ -486,9 +356,9 @@
                         </div>
                     </div>
 
-                    <div class="col-md-12 col-lg-4 d-flex align-items-center justify-content-center my-lg-5 my-3 wow zoomInDown animated" data-wow-delay="2.0s">           
-                        <span class="text-white col-xs-4 col-sm-3 col-md-2 text-center ability_circle" style="background-color: #212529; border-radius: 50%;"><bold>60</bold></span>          
-                        <div class="progress col-6">
+                    <div class="col-md-12 col-lg-4 d-flex align-items-center my-lg-5 my-sm-3 wow zoomInDown animated" data-wow-delay="2.0s">           
+                        <span class="text-white col-2 text-center" style="padding: 1rem; background-color: #212529; border-radius: 50%;"><bold>60</bold></span>          
+                        <div class="progress col-8">
                             <div class="progress-bar bg-dark" role="progressbar" style="width: 60%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <div class="col-2 text-center">
@@ -496,9 +366,9 @@
                         </div>
                     </div>
 
-                    <div class="col-md-12 col-lg-4 d-flex align-items-center justify-content-center my-lg-5 my-3 wow zoomInUp animated" data-wow-delay="2.50s">           
-                        <span class="text-white col-xs-4 col-sm-3 col-md-2 text-center ability_circle" style="background-color: #212529; border-radius: 50%;"><bold>45</bold></span>          
-                        <div class="progress col-6">
+                    <div class="col-md-12 col-lg-4 d-flex align-items-center my-lg-5 my-sm-3 wow zoomInUp animated" data-wow-delay="2.50s">           
+                        <span class="text-white col-2 text-center" style="padding: 1rem; background-color: #212529; border-radius: 50%;"><bold>45</bold></span>          
+                        <div class="progress col-8">
                             <div class="progress-bar bg-dark" role="progressbar" style="width: 45%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <div class="col-2 text-center">
@@ -506,9 +376,9 @@
                         </div>
                     </div>
 
-                    <div class="col-md-12 col-lg-4 d-flex align-items-center justify-content-center my-lg-5 my-3 wow zoomInDown animated" data-wow-delay="3.0s">           
-                        <span class="text-white col-xs-4 col-sm-3 col-md-2 text-center ability_circle" style="background-color: #212529; border-radius: 50%;"><bold>65</bold></span>          
-                        <div class="progress col-6">
+                    <div class="col-md-12 col-lg-4 d-flex align-items-center my-lg-5 my-sm-3 wow zoomInDown animated" data-wow-delay="3.0s">           
+                        <span class="text-white col-2 text-center" style="padding: 1rem; background-color: #212529; border-radius: 50%;"><bold>65</bold></span>          
+                        <div class="progress col-8">
                             <div class="progress-bar bg-dark" role="progressbar" style="width: 65%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <div class="col-2 text-center">
@@ -518,31 +388,14 @@
                 </div>
             </div>
         </section>
-        <!-- section-2 end -->
+        <!-- section-1 end -->
 
-        <!-- section-3 start : çalışmalar -->
-        <section id="calismalar">
+        <!-- section-2 start -->
+        <section id="section_2">
             <div class="container">
                 <div class="row">
                     <p class="text-uppercase display-6 text-center text-light" id="blog">Çalışmalar</p>
-                    <div class="container mt-2">
-                        <div class="row justify-content-center">
-                            <div class="col-sm-12 col-md-8">
-                                <div class="card">
-                                    <img class='card-img-top'src="img/bulut.jpg" alt="">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Example</h5>
-                                        <a class="card-link" data-bs-toggle="modal" data-bs-target="" id="incele">İncele</a>
-                                    </div>
-                                    <div class="card-footer justify-content-center">
-                                        <i class="fas fa-arrow-circle-left fa-4x arrow float-start"></i>
-                                        <i class="fas fa-arrow-circle-right fa-4x arrow float-end"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="col-md-3 wow bounceInUp animated" data-wow-delay=".50s">
+                    <div class="col-md-3 wow bounceInUp animated" data-wow-delay=".50s">
                         <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal1">
                             <img class="card-img-top" src="picture/HESMAR1.png" alt="Title">
                             <h4 class="card-title text-center mt-3">HESMAR Front-End (Thesis)</h4>
@@ -595,14 +448,14 @@
                             <img class="card-img-top" src="picture/todolist.png" alt="Title">
                             <h4 class="card-title text-center mt-3"> Dynamic To-Do List Design</h4>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
 
         </section>
-        <!-- section-3 end -->
+        <!-- section-2 end -->
 
-        <!-- section-3 modal start -->
+        <!-- section-2 modal start -->
         <div class="modal fade wow rotateIn animated" data-wow-delay=".50" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -755,10 +608,10 @@
               </div>
             </div>
           </div>
-          <!-- section-3 modal end -->
+          <!-- section-2 modal end -->
 
-          <!-- section-4 start : deneyimler -->
-        <section id="deneyimler" class="my-5">
+          <!-- section-7 start -->
+        <section id="section_7" class="my-5">
             <div class="container">
                 <div class="row">
                     <h2 class="text-center text-uppercase text-white mb-5 wow bounceInUp animated" data-wow-delay=".50s">Deneyimler</h2>
@@ -768,14 +621,14 @@
                             Haziran 2021 tarihinde ilk stajıma burada başladım. Staj süresi boyunca daha çok verilen psd' leri Html5, Css, Bootstrap ve Javascript kullanarak tasarladım. Kendimi bu alanda geliştirme fırsatı buldum. Bunların yanı sıra eğitimlerle beraber bilgilerimin üzerine koyarak devam ettim. Ağustos 2021 itibari ile burada ilk stajımı tamamladım.
                         </p>
                     </div>
-                    <div class="col-md-4 wow bounceInRight animated d-md-flex text-center align-items-center" data-wow-delay="1.5s">
-                        <img src="./picture/technoone.jpg" alt="technoone" class="rounded-circle shadow-lg">
+                    <div class="col-md-4 wow bounceInRight animated text-center align-items-center" data-wow-delay="1.5s">
+                        <img src="./picture/technoone.jpg" alt="technoone" class="rounded-circle shadow-lg" width="300px">
                     </div>
 
                     <hr style="height:3px; background-color:white" class="my-3">
                 
-                    <div class="col-md-4 wow bounceInLeft animated d-md-flex text-center align-items-center" data-wow-delay="2.0s">
-                    <img src="./picture/techcareer.png" alt="technoone" class="rounded-circle shadow-lg clear"> 
+                    <div class="col-md-4 wow bounceInLeft animated text-center align-items-center" data-wow-delay="2.0s">
+                    <img src="./picture/techcareer.png" alt="technoone" class="rounded-circle shadow-lg clear" width="300px"> 
                     </div>
                     <div class="col-md-8 text-white wow bounceInRight animated" data-wow-delay="2.5s">
                         <h4 class="text-center">Techcareer Tübisad Front-End Bootcamp</h4>
@@ -786,17 +639,17 @@
                 </div>
             </div>
         </section>
-        <!-- section-4 end -->
+        <!-- section-7 end -->
 
-        <!-- section-5 start : iletisim -->
+        <!-- section-6 start -->
         <!-- contact -->
-        <section id="iletisim">
+        <section id="section_6">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 mb-3">
                         <h2 class="text-center text-uppercase text-light">İletişim</h2>
                     </div>
-                    <div class="col-md-12 col-lg-6">
+                    <div class="col-md-6">
                         <form action="https://formspree.io/hlyollu@gmail.com" method="POST" id="contact_form" class="rounded wow flipInY animated" data-wow-delay="1.0s">
                             <div class="row">
                                 <div class="col-md-6">
@@ -805,11 +658,11 @@
                                 <div class="col-md-6">
                                     <input type="text" placeholder="soyadınız" class="form-control text-white" style="background:transparent;">
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-8">
                                     <input type="email" placeholder="deneme@xyz.com" class="form-control text-white" style="background:transparent;">
                                 </div>
-                                <div class="col-md-6">
-                                    <input type="tel" placeholder="numaranız" class="form-control text-white" style="background:transparent;">
+                                <div class="col-md-4">
+                                    <input type="number" placeholder="numaranız" class="form-control text-white" style="background:transparent;">
                                 </div>
                                 <div class="col-md-12">
                                     <fieldset>
@@ -826,7 +679,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="col-md-12 col-lg-6">
+                    <div class="col-md-6">
                         
                         <div class="card mb-3 text-center">
                             <div id="map" class="card-img-top">
@@ -856,23 +709,55 @@
                 </div>    
             </div>
         </section>
-        <!-- section-5 end -->
+        <!-- section-6 end -->
     </main>
     <!-- main-end -->
 
     <!-- footer-start -->
     <footer class="text-center text-lg-start">
 
-        <!-- footer istatistik start -->
-        <section id="istatistik" class="my-3">
+        <!-- footer-tab-1 start -->
+        <section id="section_footer_1" class="p-4 border-top d-flex justify-content-center justify-content-lg-between">
+            <div class="container">
+                <div class="row">
+                    <!-- social -->
+                    <div id="social_id" class="col-12 text-center">
+                        <a href="https://www.linkedin.com/in/halil-yollu-17b8b9207/" class="me-1 btn btn-outline-info text-reset btn-floating col-sm-12 col-md-2" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/halil.yll/?hl=tr" class="me-1 btn btn-outline-danger text-reset btn-floating col-sm-12 col-md-2" target="_blank">
+                        <i class="fa-brands fa-instagram-square"></i>
+                        </a>
+                        <a href="https://twitter.com/dostaviskiii" class="me-1 btn btn-outline-primary text-reset btn-floating col-sm-12 col-md-2" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                        </a> 
+                        <a href="https://api.whatsapp.com/send?phone=05075135929" class="me-1 btn btn-outline-success text-reset btn-floating col-sm-12 col-md-2" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        </a> 
+                        <a href="https://github.com/halilyollu" class="me-1 btn btn-outline-secondary text-reset btn-floating col-sm-12 col-md-2" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer-tab-1 end -->
+
+
+        <!-- footer-tab-2 start -->
+        <section id="section_footer_2" class="my-3">
             <div class="container text-center text-md-start mt-5">
                 <div class="row mt-4">
+                    <!-- medium device:4 
+                    large device :3
+                    xlarge device :4 -->
+
                     <h2 class="text-center text-uppercase">Proje İstatistikleri</h2>
                     <div class="row">
                         <div class="col-md-12 text-center">
                             
-                            <div class="col-md-12 wow flipInX animated d-flex justify-content-center" data-wow-delay=".50s">
-                                <canvas id="canvas" width="350" height="350">
+                            <div class="col-md-12 wow flipInX animated" data-wow-delay=".50s">
+                                <canvas id="canvas" width="400" height="300">
                                 
                                 </canvas>
                                 <script type="text/javascript">
@@ -937,32 +822,32 @@
                                     </script>
                             </div>
 
-                            <div class="d-lg-flex justify-content-between">
-                                <div class="col-sm-12 col-lg-2 text-center wow flipInY animated" data-wow-delay=".50s" style="font-size: 2rem;">
+                            <div class="d-md-flex justify-content-between">
+                                <div class="col-sm-12 col-md-2 text-center wow flipInY animated" data-wow-delay=".50s" style="font-size: 2rem;">
                                     <i class="fa-brands fa-js-square" style="color: #efd81d;"></i>
                                     <p class="text-center">Javascript</p>
                                     <p class="text-center rounded d-inline p-2" style="background-color: #efd81d;">%40</p>
                                 </div>
     
-                                <div class="col-sm-12 col-lg-2 text-center wow flipInY animated" data-wow-delay="1.0s" style="font-size: 2rem;">
+                                <div class="col-sm-12 col-md-2 text-center wow flipInY animated" data-wow-delay="1.0s" style="font-size: 2rem;">
                                     <i class="fa-brands fa-css3-alt" style="color: #2862e9;"></i>
                                     <p class="text-center">Css</p>
                                     <p class="text-center rounded d-inline p-2" style="background-color: #2862e9;">%30</p>
                                 </div>
     
-                                <div class="col-sm-12 col-lg-2 text-center wow flipInY animated" data-wow-delay="1.50s" style="font-size: 2rem;">
+                                <div class="col-sm-12 col-md-2 text-center wow flipInY animated" data-wow-delay="1.50s" style="font-size: 2rem;">
                                     <i class="fa-brands fa-html5" style="color: #dd4b25;"></i>
                                     <p class="text-center">Html5</p>
                                     <p class="text-center rounded d-inline p-2" style="background-color: #dd4b25;">%14</p>
                                 </div>
     
-                                <div class="col-sm-12 col-lg-2 text-center wow flipInY animated" data-wow-delay="2.0s" style="font-size: 2rem;">
+                                <div class="col-sm-12 col-md-2 text-center wow flipInY animated" data-wow-delay="2.0s" style="font-size: 2rem;">
                                     <img src="https://img.icons8.com/color/48/000000/dart.png"/>
                                     <p class="text-center">Dart</p>
                                     <p class="text-center rounded d-inline p-2" style="background-color: #045496;">%4</p>
                                 </div>
     
-                                <div class="col-sm-12 col-lg-2 text-center wow flipInY animated" data-wow-delay="2.50s" style="font-size: 2rem;">
+                                <div class="col-sm-12 col-md-2 text-center wow flipInY animated" data-wow-delay="2.50s" style="font-size: 2rem;">
                                     <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"/>
                                     <p class="text-center">C++</p>
                                     <p class="text-center rounded d-inline p-2" style="background-color: #659ad2;">%2</p>
@@ -974,34 +859,9 @@
                 </div>
             </div>
         </section>
-        <!-- footer istatistik end -->
+        <!-- footer-tab-2 end -->
 
-        <!-- footer sosyal start -->
-        <section id="sosyal" class="p-4 border-top d-flex justify-content-center justify-content-lg-between">
-            <div class="container">
-                <div class="row">
-                    <!-- social -->
-                    <div id="social_id" class="col-12 text-center">
-                        <a href="https://www.linkedin.com/in/halil-yollu-17b8b9207/" class="me-1 btn btn-outline-info text-reset btn-floating col-sm-12 col-md-2" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                        <a href="https://www.instagram.com/halil.yll/?hl=tr" class="me-1 btn btn-outline-danger text-reset btn-floating col-sm-12 col-md-2" target="_blank">
-                        <i class="fa-brands fa-instagram-square"></i>
-                        </a>
-                        <a href="https://twitter.com/dostaviskiii" class="me-1 btn btn-outline-primary text-reset btn-floating col-sm-12 col-md-2" target="_blank">
-                        <i class="fa-brands fa-twitter"></i>
-                        </a> 
-                        <a href="https://api.whatsapp.com/send?phone=05075135929" class="me-1 btn btn-outline-success text-reset btn-floating col-sm-12 col-md-2" target="_blank">
-                        <i class="fa-brands fa-whatsapp"></i>
-                        </a> 
-                        <a href="https://github.com/halilyollu" class="me-1 btn btn-outline-secondary text-reset btn-floating col-sm-12 col-md-2" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- footer sosyal end -->
+
 
         <!-- CopyRight -->
         <div class="text-center p-5 bg-dark" id="copy_right">
