@@ -1,7 +1,14 @@
 let date = () => {
-  
-  document.getElementById("date_id").innerHTML=new Date().toLocaleDateString();
-     
+    
+  let i = 0;
+  if(i == 0){
+    document.getElementById("date_id").innerHTML=new Date().toLocaleString();
+    i = 1;
+  }else{
+    document.getElementById("date_id").innerHTML="";
+    i = 0;
+  }
+
   const cssObject={
       "color":"white",
       "background-color":"transparent",
