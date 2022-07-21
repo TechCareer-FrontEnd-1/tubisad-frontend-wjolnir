@@ -404,6 +404,10 @@
                 let regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
                 return regex.test(repassword);
                 }
+
+                if(regexPassword(password) == true && regexPassword(repassword) == true && regexEmail(email) == true){
+                    document.getElementById("btnRegister").setAttribute("onclick","SweetAlert()");
+                }
     
             })//onclick close
             }); //document ready close
